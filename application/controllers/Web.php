@@ -13,4 +13,10 @@ Class Web extends CI_Controller{
         $this->loat->view('v_index',$data);
         $this->loat->view('v_footer',$data);
     }
+    public function about(){
+        $data['judul'] = "Halaman About";
+        $this->loat->view('v_header',$data);
+        $this->loat->view('v_about',$data);
+        $this->loat->view('v_footer',$data);
+    }
 }

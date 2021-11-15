@@ -29,7 +29,6 @@ class ModelBuku extends CI_Model
  if(!empty($where) && count($where) > 0){
  $this->db->where($where);
  }
-66
  $this->db->from('buku');
  return $this->db->get()->row($field);
  }
